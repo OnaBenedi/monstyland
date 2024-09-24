@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #92C7CF;
+}
+
+#seleccionar-partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: #FBF9F1;
+    font-size: xxx-large;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.subtitulo {
+    color: #FBF9F1;
+    font-size: 32px;
+}
+
+.tarjetas, .estructura-boton-ataque {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.tarjeta-de-monstyland {
+    width: 190px;
+    height: 100px;
+    background: #E5E1DA;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 20px;
+    display: flex;
+    color: #176B87;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-de-monstyland img {
+    width: 80px;
+}
+#boton-partner {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: #176B87;
+    border: 1px solid transparent;
+    color: lightgray;
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+}
+
+input {
+    display: none;
+}
+
+input:hover + label{
+    background-color: #FBF9F1;
+}
+
+input:checked + label{
+ background-color: #FBF9F1;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-ataque {
+    width: 190px;
+    height: 40px;
+    background: #176B87;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: lightgray;
+    margin: 20px;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+  
+}
+.boton-ataque:hover {
+    background-color: #AAD7D9;
+    color: black;
+    border-color: #92C7CF;
+}
+
+#mensajes {
+    background: lightgray;
+    color: #176B87;
+    width: 280px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boton-reiniciar{
+    border: none;
+    color:#176B87;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.perfiles{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.perfil-jugador, .perfil-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+    .tarjetas, .estructura-boton-ataque {
+        flex-direction: column;
+    }
+}
+
+

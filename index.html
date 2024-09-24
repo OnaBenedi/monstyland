@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MONSTYLAND!</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section id="seleccionar-partner">
+            <h1 class="titulo"><u>Monstyland!</u></h1>
+
+            <h2 class="subtitulo">Elige tu compañero:</h2>
+
+            <div class="tarjetas">
+                <input type="radio" name="partner" id="lilyleaf"/>
+                <label class="tarjeta-de-monstyland" for="lilyleaf">
+                    <p>Lilyleaf <br>➡ Agua</p>
+                    <img src="./assets/mokepons_mokepon_hipodoge_attack.webp" alt="lilyleaf">
+                </label>
+               
+                <input type="radio" name="partner" id="monstera"/>
+                <label class="tarjeta-de-monstyland" for="monstera">
+                    <p>Monstera <br>➡ Planta</p>
+                    <img src="./assets/mokepons_mokepon_capipepo_attack.webp" alt="monstera">
+                </label>
+
+                <input type="radio" name="partner" id="brakyton"/> 
+                <label class="tarjeta-de-monstyland" for="brakyton">
+                    <p>Brakyton <br>➡ Fuego</p>
+                    <img src="./assets/mokepons_mokepon_ratigueya_attack.webp" alt="brakyton">
+                
+                </label>
+            </div>
+            
+            
+ <!--           <input type="radio" name="partner" id="langostelvis"/>
+            <label for="langostelvis">Langostelvis ➡ Agua y Fuego</label> <br>
+            
+            
+            <input type="radio" name="partner" id="tucapalma"/>
+            <label for="tucapalma">Tucapalma ➡ Agua y Tierra</label> <br>
+            
+            
+            <input type="radio" name="partner" id="pydos"/>
+            <label for="pydos">Pydos ➡ Tierra y Fuego</label> <br> -->
+
+            <button id="boton-partner">Seleccionar</button>
+
+
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo"><u>Monstyland!</u></h1>
+            
+            <h2 class="subtitulo">Elige tu ataque:</h2>
+            
+            <div class="estructura-boton-ataque">
+                <!-- Fuego: ascuas, llamarada, ignición -->
+                <button id="boton-ascuas" class="boton-ataque">ASCUAS🔥</button> 
+                <button id="boton-llamarada" class="boton-ataque">LLAMARADA🔥</button> 
+                <button id="boton-ignicion" class="boton-ataque">IGNICIÓN🔥</button>
+                <!-- Agua: burbujas, salpicadura, lluvia -->
+                <button id="boton-burbujas" class="boton-ataque">BURBUJAS💧</button>
+                <button id="boton-salpicadura" class="boton-ataque">SALPICADURA💧</button>
+                <button id="boton-lluvia" class="boton-ataque">LLUVIA💧</button>
+                <!-- Planta: terremoto, hojaraza, cuchillo vegetal -->
+                <button id="boton-terremoto" class="boton-ataque">TERREMOTO🍃</button>
+                <button id="boton-hojaraza" class="boton-ataque">HOJARAZA🍃</button>
+                <button id="boton-cuchillo-vegetal" class="boton-ataque">CUCHILLO VEGETAL🍃</button>
+            </div>
+
+            <div id="mensajes">
+                <p id="resultado">Mucha suerte🍀</p>
+                
+                <section id="reiniciar-juego">
+                    <button id="boton-reiniciar">Reiniciar juego</button>
+                </section>
+            </div>
+
+            <div class="perfiles">
+
+                <div class="perfil-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="partner-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="perfil-enemigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="partner-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section> 
+        <script src="./js/monstyland.js"></script>       
+    </body>
+</html>
